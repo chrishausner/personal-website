@@ -11,6 +11,9 @@ function App() {
         <h1>
           Christian Hausner
         </h1>
+        <p>
+          this site is still under development
+        </p>
       </header>
     </div>
   );
