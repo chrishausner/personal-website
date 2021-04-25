@@ -6,7 +6,7 @@ import { Home } from './Home';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
-import { ShortLinks } from './ShortLinks';
+import { LinkedCards } from './LinkedCards';
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
         <Layout>
           <Router>
             <Switch>
-              <Route exact path="/" component={ShortLinks} />
+              <Route exact path="/" component={LinkedCards} />
               <Route component={NoMatch} />
             </Switch>
           </Router>
