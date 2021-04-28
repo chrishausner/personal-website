@@ -17,9 +17,10 @@ export const NavigationBar  = () => (
   <Styles>
     <Navbar expand="md">
       <Nav className="ml-auto">
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="navbarNav">
           <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/">Projects</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/projects">Projects</Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="/">Contact</Nav.Link></Nav.Item>
         </Navbar.Collapse>
       </Nav>

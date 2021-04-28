@@ -2,22 +2,24 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Home } from './Home';
+import { NameBanner } from './NameBanner';
 import { NoMatch } from './NoMatch';
+import { Projects } from './components/Projects';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
-import { LinkedCards } from './LinkedCards';
+import { LinkedCards } from './components/LinkedCards';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <NavigationBar />
-        <Home />
+        <NameBanner />
         <Layout>
           <Router>
             <Switch>
               <Route exact path="/" component={LinkedCards} />
+              <Route path ="/projects" component={Projects} />
               <Route component={NoMatch} />
             </Switch>
           </Router>
